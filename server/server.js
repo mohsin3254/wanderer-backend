@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
+var cors = require("cors");
 
+app.use(cors());
 const dbConfig = require("./db");
 const roomsRoute = require("./routes/roomRoute");
 const usersRoute = require("./routes/userRoute");
